@@ -10,7 +10,7 @@ import { Renderer2, ElementRef } from '@angular/core';
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent {
-  menuIconSrc: string = '/assets/menu.webp';
+  menuIconSrc: string = 'assets/menu.webp';
   isMenuOpen = false;
   mostraH2 = false;
   isTextVisible: boolean = false;
@@ -65,6 +65,6 @@ export class MenuComponent {
   
   menuclick(): void {
     this.isMenuOpen = !this.isMenuOpen;
-    this.menuIconSrc = this.isMenuOpen ? '/assets/arrow.webp' : '/assets/menu.webp';
+    this.menuIconSrc = this.isMenuOpen ? 'assets/arrow.webp' : 'assets/menu.webp';
   }
 }
