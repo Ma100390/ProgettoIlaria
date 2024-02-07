@@ -83,7 +83,8 @@
 
 
 .full-height-container {
-  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 #presentazione {
@@ -139,8 +140,7 @@
 
 #elementId {
   position: absolute;
-  top: 70%;
-  left: 50%;
+
   color: #f2f2f2;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   font-size: 38px;

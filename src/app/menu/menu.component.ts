@@ -12,7 +12,7 @@ import { Renderer2, ElementRef } from '@angular/core';
 export class MenuComponent {
   menuIconSrc: string = 'assets/menu.webp';
   isMenuOpen = false;
-  mostraH2 = false;
+  mostraH2 = true;
   isTextVisible: boolean = false;
   isRotated: boolean = false;
   previousScrollPosition: number = 0;
@@ -36,7 +36,7 @@ export class MenuComponent {
 
     const animationDuration = animationProgress > 0 ? `${Math.abs(animationProgress) * 600}s` : '0s';
 
-    const transformValue = `translate(-50%, -150%) scale(${1 + animationProgress * 3})`;
+    const transformValue = `translate(2%, 100%) scale(${1 + animationProgress * 3})`;
     const opacityValue = 1 - animationProgress;
 
     const finalOpacity = this.mostraH2 ? opacityValue : 0;
