@@ -1,0 +1,98 @@
+<nav class="menu-nav">
+    <div class="menu-div-icona" (click)="menuclick()">
+        <img [src]="menuIconSrc" alt="Menu Icona" id="icon">
+    </div>
+    <h2 class="sottotitolo">Dott.ssa Ilaria Carlino</h2>
+    <h1 class="titolo">Psicologa e Psicoterapeuta</h1>
+    <img src="/assets/logo.png" alt="Menu Icona" id="logo">
+    <ul class="menu-ul" *ngIf="isMenuOpen" [class.show-menu]="isMenuOpen">
+        <li class="menu-li"><a routerLink="/">Psicologa</a></li>
+        <li class="menu-li"><a routerLink="/chi-siamo">Servizi</a></li>
+        <li class="menu-li"><a routerLink="/contatti">Contatti</a></li>
+        <li class="menu-li"><a routerLink="/prospettive">Dove Siamo</a></li>
+    </ul>
+</nav>
+
+<div class="full-height-container">
+    
+    <h2 id="elementId" [ngStyle]="getAnimationStyle()">" Libertà e consapevolezza per vivere con totalità "</h2>
+    <img id="presentazione" src="assets/presentazione.jpg" alt="Immagine di sicurezza informatica">
+</div>
+<button class="button" (click)="toggleText()">
+    Per saperne di più
+    <img src="/assets/arrow1.png" alt="Menu Icona" id="freccia2" [class.rotated]="isRotated">
+</button>
+
+<div *ngIf="isTextVisible" class="additional-text">
+    Dott.ssa Ilaria Carlino psicologa iscritta all'ordine degli psicologi della Puglia con n.6694 specializzanda in
+    Neuropsicosomatica Clinica e Psicoterapia Umanistica Psico-Corporea.
+    Master universitario di II livello in "Esperto in valutazione e riabilitazione neurocognitiva per l'età evolutiva, l'adulto e l'anziano" presso l'universita del Salento.
+    Borsa di studio sulla "Disabilità e accessibilità delle strutture universitarie e degli spazi urbani" presso
+    l'Università degli studi di Bari "Aldo Moro" nell'ambito del progetto "Puglia Regione Universitaria"
+    Operatrice formata per svolgere il Progetto Gaia "Educazione alla consapevolezza e alla salute globale"
+    Master in "Psicodiagnosi dell'età evolutiva" presso l'Accademia dei test proiettivo di Torino.
+    Titolo in "Game Trainer" presso il Centro Studi Erickson di Trento.(Giochi da tavolo educativi con minori).
+</div>
+
+
+<div class="inserto">
+    <h2 class="inserto2">Servizi individuali</h2>
+</div>
+
+<div class="percorsi">
+    <img src="/assets/percorsi.png" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Percorsi di sostegno psicologico per minori</h2>
+    <h4 class="padding">Incontri basati sul gioco e la condivisione verbale idonea all'età volti a sostenere
+        l'espressione emotica e le esigenze del minore.Promuovendo la possibilità di migliorare le sue intenzioni con
+        genitori e pari </h4>
+</div>
+<div class="percorsi">
+    <img src="/assets/ufficio.jpg" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Colloqui psicologici individuali con adulti</h2>
+    <h4 class="padding">Incontri volti a comprendere quale sia l'esigenza e/o problematica vissuta, fissare e perseguire degli obbiettivi comuni in un luogo sicuro e privo di giudizio. </h4>
+</div>
+<div class="percorsi">
+    <img src="/assets/ufficio2.jpg" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Sostegno alla genitorietà e Parent training</h2>
+    <h4 class="padding">Incontri individuali o possibilmente di coppia, mirati a sostenere il ruolo genitoriale, favorendo risposte adattive ai bisogni educativi e affettivi di adulti e bambini della famiglia.</h4>
+</div>
+<div class="percorsi">
+    <img src="/assets/gruppo.jpg" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Valutazione e riabilitazione neurocognitiva per tutte le età</h2>
+    <h4 class="padding">Esame delle funzioni psicologiche, neuro psicologiche e cognitive "DSA", "ADHD", malattie neuro degenerative, esiti di traumi cranici... della persona interessata, effettuato tramite colloquio e/o test diagnostici validati dalla ricerca che esita in una relazione scritta.</h4>
+</div>
+<div class="scrolling-text-container">
+    <div class="scrolling-text">
+        <h3>Da oggi Colloqui Online dal lun al sab 10 alle 21</h3>
+    </div>
+</div>
+
+<div class="inserto3">
+    <h2 class="inserto4">Servizi di gruppo</h2>
+</div>
+
+<div class="percorsi">
+    <img src="/assets/gruppo.jpg" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Gruppi di meditazione e consapevolezza psico-corporea</h2>
+    <h4 class="padding">Rallenta il ritmo frenetico della vita quotidiana e immergiti nella pratica della meditazione e della consapevolezza psico-corporea. Trova serenità e equilibrio nel nostro accogliente ambiente di gruppo.</h4>
+</div>
+<div class="percorsi">
+    <img src="/assets/profilo2.jpg" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Percorsi di crescita personale individuali e di gruppo</h2>
+    <h4 class="padding">Entra in un viaggio di auto-esplorazione e trasformazione con i nostri percorsi di crescita personale. Siamo qui per aiutarti a superare gli ostacoli e a raggiungere i tuoi obiettivi più ambiziosi.</h4>
+</div>
+<div class="percorsi">
+    <img src="/assets/montagne.jpg" alt="Menu Icona" id="percorsi">
+    <h2 class="h2">Sessioni di Mindfulness e Relaxation</h2>
+    <h4 class="padding">Scopri il potere trasformativo della mindfulness e del rilassamento. Partecipa alle nostre sessioni guidate per ridurre lo stress, migliorare la concentrazione e promuovere il benessere generale.</h4>
+</div>
+<footer>
+        
+    <div class="progetti">
+        <p>&copy; 2024 Vetrina INFORMATICA. Tutti i diritti riservati.</p>
+        <a href="https://www.linkedin.com/in/manuel-magini-4430161a7" target="_blank">
+            <img src="assets/linkedin.png" alt="Collegamento esterno su LinkedIn">
+        </a>
+     
+    </div>
+</footer>

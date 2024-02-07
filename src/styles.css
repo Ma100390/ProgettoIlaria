@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@600&family=Libre+Baskerville&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* 
+font-family: 'Kalnia', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Sacramento', cursive;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+  }

@@ -1,0 +1,262 @@
+/* Stile generale del menu */
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+
+  position: fixed;
+  /* Cambia da 'absolute' a 'fixed' */
+  width: 100%;
+  top: 0;
+  /* Assicura che la navbar sia posizionata in alto */
+  left: 0;
+  height: 8%;
+  z-index: 1000;
+}
+
+/* Stile dell'icona del menu */
+.menu-div-icona {
+  cursor: pointer;
+}
+
+#icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#freccia2 {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+
+}
+
+.rotated {
+  transform: rotate(90deg);
+  /* Ruota l'immagine di 180 gradi quando ha la classe 'rotated' */
+  transition: transform 1s ease;
+  /* Aggiungi una transizione per un'animazione fluida */
+}
+
+/* Stile della lista del menu */
+.menu-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.menu-li {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-li a:hover {
+  color: #00bcd4;
+}
+
+/* Aggiunge la classe show-menu per visualizzare il menu quando è aperto */
+.show-menu {
+  transform: translateY(0);
+  z-index: 100;
+}
+
+
+.full-height-container {
+  height: 100%;
+}
+
+#presentazione {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* per mantenere l'aspetto dell'immagine */
+}
+
+@media screen and (max-width: 767px) {
+  #presentazione {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .sottotitolo {
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(228, 219, 219, 0.774);
+    font-family: 'Sacramento', cursive;
+    top: 1.2%;
+  }
+
+  .titolo {
+    position: absolute;
+    /* togliere l'effetto scomparsa sul titolo */
+    left: 27%;
+    z-index: 1;
+    color: #ff0000f0;
+    text-shadow: 0 0 4px rgba(250, 247, 247, 0.767);
+    font-family: "Montserrat", sans-serif;
+
+    font-size: smaller;
+  }
+
+  #logo {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    filter: drop-shadow(0px 1px 5px #000);
+  }
+
+  #percorsi {
+    max-width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 90%, 79% 100%, 79% 75%, 0% 75%);
+  }
+}
+
+#elementId {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  z-index: 1;
+  color: #f2f2f2;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 38px;
+  font-family: "Kalnia", serif;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  text-shadow: 0 0 30px rgb(255, 255, 255);
+  background-color: #c6cec6;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 1px #fff;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button:hover {
+  background-color: #343596;
+  color: #fff;
+}
+
+.additional-text {
+  padding: 3%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 2%;
+}
+
+.inserto {
+  height: 300px;
+  background-color: #343596;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.inserto2{
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  position: absolute;
+  top: 50%; 
+  left: 20%; 
+ 
+}
+.inserto3 {
+  height: 300px;
+  background-color: #449634;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.inserto4{
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  position: absolute;
+  top: 50%; 
+  left: 20%; 
+ 
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(290%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.h2 {
+  position: absolute;
+  transform: translateY(-70px);
+  /* Sposta l'elemento verso l'alto di 70px */
+  left: 0;
+  /* Assicura che l'elemento sia allineato correttamente */
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 30px rgb(255, 255, 255);
+  padding-right: 90px;
+  padding-left: 20px;
+  color: orangered;
+
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+.padding {
+  text-indent: 20px;
+  padding: 12%;
+  font-family: "Libre Baskerville", serif;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
