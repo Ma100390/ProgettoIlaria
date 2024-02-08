@@ -10,7 +10,14 @@ import { CommonModule } from '@angular/common';
 export class PaginaPrincipaleComponent {
   mostraH2 = true;
   isTextVisible: boolean = false;
+  isTextVisible1: boolean = false;
+  isTextVisible2: boolean = false;
+  isTextVisible3: boolean = false;
   isRotated: boolean = false;
+  isText1Colored: boolean = false;
+  isText2Colored: boolean = false;
+  isText3Colored: boolean = false;
+
   previousScrollPosition: number = 0;
   @HostListener('window:scroll', ['$event'])
   onScroll() {
@@ -52,5 +59,30 @@ export class PaginaPrincipaleComponent {
     this.isTextVisible = !this.isTextVisible;
     this.isRotated = !this.isRotated;
   }
+
+  toggleText1(): void {
+    this.isTextVisible1 = !this.isTextVisible1;
+    // Nascondi gli altri elementi dell'accordion
+    this.isTextVisible2 = false;
+    this.isTextVisible3 = false;
+    this.isText1Colored = !this.isText1Colored;
+}
+
+toggleText2(): void {
+    this.isTextVisible2 = !this.isTextVisible2;
+    // Nascondi gli altri elementi dell'accordion
+    this.isTextVisible1 = false;
+    this.isTextVisible3 = false;
+    this.isText2Colored = !this.isText2Colored;
+}
+
+toggleText3(): void {
+    this.isTextVisible3 = !this.isTextVisible3;
+    // Nascondi gli altri elementi dell'accordion
+    this.isTextVisible1 = false;
+    this.isTextVisible2 = false;
+    this.isText3Colored = !this.isText3Colored;
+}
+
 
 }

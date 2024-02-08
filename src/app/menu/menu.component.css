@@ -49,6 +49,7 @@
 .menu-li {
   padding: 15px;
   text-align: center;
+
 }
 
 .menu-li a {
@@ -58,8 +59,9 @@
   transition: color 0.3s ease-in-out;
 }
 
-.menu-li a:hover {
-  color: #00bcd4;
+.menu-li a {
+  color:#898ad2;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Aggiunge la classe show-menu per visualizzare il menu quando è aperto */
@@ -89,7 +91,7 @@
     /* togliere l'effetto scomparsa sul titolo */
     left: 27%;
     z-index: 1;
-    color: #ff0000f0;
+    color: #898ad2;
     text-shadow: 0 0 4px rgba(250, 247, 247, 0.767);
     font-family: "Montserrat", sans-serif;
     top: 50%;

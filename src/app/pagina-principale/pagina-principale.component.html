@@ -1,4 +1,3 @@
-
 <div class="full-height-container">
     <h2 id="elementId" [ngStyle]="getAnimationStyle()">" Libertà e consapevolezza per vivere con totalità "</h2>
     <img id="presentazione" src="assets/presentazione.webp" alt="Immagine di sicurezza informatica">
@@ -11,21 +10,78 @@
 <div *ngIf="isTextVisible" class="additional-text">
     <div class="profile-info">
         <img src="assets/profilo.webp" alt="Menu Icona" class="professional-profile-img">
-        <div class="profile-description">
-            <p>
-                Dott.ssa Ilaria Carlino psicologa iscritta all'ordine degli psicologi della Puglia con n.6694 specializzanda in
-                Neuropsicosomatica Clinica e Psicoterapia Umanistica Psico-Corporea.
-                Master universitario di II livello in "Esperto in valutazione e riabilitazione neurocognitiva per l'età evolutiva, l'adulto e l'anziano" presso l'universita del Salento.
-            </p>
-        </div>
-            <p id="testocentrato">
-                Borsa di studio sulla "Disabilità e accessibilità delle strutture universitarie e degli spazi urbani" presso
-                l'Università degli studi di Bari "Aldo Moro" nell'ambito del progetto "Puglia Regione Universitaria"
-                Operatrice formata per svolgere il Progetto Gaia "Educazione alla consapevolezza e alla salute globale"
-                Master in "Psicodiagnosi dell'età evolutiva" presso l'Accademia dei test proiettivo di Torino.
-                Titolo in "Game Trainer" presso il Centro Studi Erickson di Trento.(Giochi da tavolo educativi con minori).
-            </p>
-      
-    </div>
-</div>
+        <div class="profile-container">
+            <div class="profile-card">
+                <h1 class="profile-title">La Dott.ssa Ilaria Carlino: Esperta in Psicologia e Benessere</h1>
+                <p class="profile-description">
+                    Mi presento: sono Ilaria Carlino, psicologa abilitata e iscritta all'Ordine Psicologi Puglia con
+                    n.6694, ho terminato il Training in "Neuropsicosomatica clinica" presso il Villaggio Globale - Bagni
+                    di Lucca.
 
+                </p>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-btn" (click)="toggleText1()"
+                    [ngClass]="{'colored-text': isText1Colored}">Formazione Accademica</button>
+                <div class="accordion-content" [class.show]="isTextVisible1">
+                    <p>
+                        La mia formazione psicologica è iniziata nel 2012, anno in cui ho avviato il mio percorso di
+                        studi presso l'Università degli Studi della Campania "Luigi Vanvitelli" (dove ho conseguito
+                        anche la laurea magistrale nel 2018); nello stesso periodo, ho iniziato a frequentare un
+                        percorso di crescita personale presso il Villaggio Globale - Bagni di Lucca, conseguendo poi il
+                        Master in Neuropsicosomatica e Mindfulness.
+                        Durante gli anni di studio ho deciso di mettere a frutto la mia datata passione per lo sport e
+                        la pallavolo in particolare, conseguendo l'attestato di Allenatore di I grado FIPAV e, con
+                        l'Associazione Gibberish (sportiva e di promozione sociale), mi sono occupata
+                        dell'organizzazione e messa in atto di attività sportive per bambini normodotati e con
+                        disabilità intellettivo - relazionale.
+                        Ho vinto una borsa di studio e ricerca in "Disabilità e accessibilità delle strutture
+                        universitarie e degli spazi urbani" presso l'Università degli Studi di Bari Aldo Moro,
+                        nell'ambito del progetto "Puglia Regione Universitaria".
+                        Ho lavorato come psicologa presso due centri diurni di Bari: L'Abbraccio Bari e Centro Diurno
+                        Alzheimer Insieme, effettuando valutazioni neuropsicologiche e del comportamento adattivo,
+                        colloqui con utenti e famiglie, programmi di stimolazione cognitiva e supervisionando le
+                        attività educative.
+
+                    </p>
+                </div>
+
+                <button class="accordion-btn" (click)="toggleText2()"
+                    [ngClass]="{'colored-text': isText2Colored}">Specializzazioni e Corsi Complementari</button>
+                <div class="accordion-content" [class.show]="isTextVisible2">
+
+                    <p>
+                        Dopo la laurea, ho deciso di trasferirmi in provincia di Torino, dove ho svolto un breve periodo
+                        di tirocinio presso Area onlus, conseguendo anche il master in "Psicodiagnosi dell'età
+                        evolutiva" con l'Accademia del test proiettivo; ho svolto poi il tirocinio post-laurea nel
+                        Servizio di Psicologia dell'età evolutiva dell'ASL di Nichelino (TO), lavorando
+                        contemporaneamente come insegnante di sostegno presso Le scuole dell'Arca.
+                        La mia formazione si è ancora arricchita grazie all'interesse per i giochi da tavolo, portandomi
+                        a conseguire il titolo di Game Trainer, presso Edizioni Centro Studi Erickson.
+                        Poco prima dell'inizio della pandemia, ho scelto di tornare nella mia terra natìa, la Puglia,
+                        dove ho conseguito il Master universitario di II livello in "Esperto in valutazione e
+                        riabilitazione neurocognitiva per l'età evolutiva, l'adulto e l'anziano", presso l'Università
+                        del Salento
+                        e ho poi svolto un anno di formazione presso la scuola di specializzazione in "Psicologia del
+                        ciclo di vita" dell'Università degli Studi di Bari Aldo Moro.
+
+                    </p>
+                </div>
+
+                <button class="accordion-btn" (click)="toggleText3()"
+                    [ngClass]="{'colored-text': isText3Colored}">Impegno Sociale e Professionale</button>
+                <div class="accordion-content" [class.show]="isTextVisible3">
+
+                    <p> Sono operatrice formata per svolgere il Progetto Gaia, con individui, gruppi e aziende.
+                        Svolgo attività privata nella città di Veglie (LE) e collaboro con Spazio Arcobaleno Lecce e
+                        porto avanti progetti di benessere psicologico e progetti educativi con minori in diversi centri
+                        culturali e scuole.
+                        Sono in formazione nella scuola di psicoterapia umanistica psicocorporea dell'istituto UIP
+                        Ciò che viene dopo è il presente e il futuro spero ricco di esperienze e di possibilità di
+                        essere
+                        d'aiuto / supporto a chi incontrerò nel mio cammino.</p>
+                </div>
+            </div>
+        </div>
+    </div>
