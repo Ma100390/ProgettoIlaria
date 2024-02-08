@@ -1,0 +1,132 @@
+.full-height-container {
+    position: relative;
+    overflow: hidden;
+  }
+  #elementId {
+    position: absolute;
+  
+    color: #f2f2f2;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 38px;
+    font-family: "Kalnia", serif;
+  }
+  
+#presentazione {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* per mantenere l'aspetto dell'immagine */
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+    background-color: #c6cec6;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 1px #fff;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    font-family: "Montserrat", sans-serif;
+  }
+  #freccia2 {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+  
+  }
+  .button:hover {
+    background-color: #343596;
+    color: #fff;
+  }
+  
+  .additional-text {
+    padding: 3%;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .rotated {
+    transform: rotate(90deg);
+    /* Ruota l'immagine di 180 gradi quando ha la classe 'rotated' */
+    transition: transform 1s ease;
+    /* Aggiungi una transizione per un'animazione fluida */
+  }
+  #presentazione {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .professional-profile-img {
+    width: 150px; /* Imposta la larghezza desiderata */
+    height: 150px; /* Imposta l'altezza desiderata */
+    border-radius: 50%; /* Arrotonda gli angoli per creare un'immagine circolare */
+    border: 3px solid #fff; /* Aggiunge un bordo bianco intorno all'immagine */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra sottile per un effetto tridimensionale */
+    animation: kenburns-top-left 5s ease-out both;
+  }
+  
+  .professional-profile-img:hover {
+    transform: scale(1.25); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+  }
+  @keyframes kenburns-top-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 16%;
+              transform-origin: 16% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, -15px);
+              transform: scale(1.25) translate(-20px, -15px);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+    }}
+
+    .additional-text {
+      display: flex;
+      align-items: center; /* Centra verticalmente il contenuto */
+  }
+
+  .professional-profile-img {
+      width: 150px; /* Imposta la larghezza dell'immagine del profilo */
+      height: auto; /* Imposta l'altezza dell'immagine in modo proporzionale */
+      margin-right: 20px; /* Aggiunge uno spazio a destra per separare l'immagine dal testo */
+  }
+  
+  .profile-description {
+      flex-grow: 1; 
+      
+  }
+  
+
+  #testocentrato{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column; /* Imposta il layout in colonna */
+    align-items: center; /* Centra orizzontalmente */
+    text-align: center; /* Centra il testo */
+    padding: 5%;
+}
+
+.profile-description {
+    margin-top: 20px; /* Aggiunge spazio sopra il paragrafo */
+}
+
+#testocentrato {
+    margin-top: 20px; /* Aggiunge spazio sopra il secondo paragrafo */
+}
+p{
+  margin-top: 5%;
+}

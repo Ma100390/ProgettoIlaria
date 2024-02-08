@@ -1,0 +1,90 @@
+.inserto {
+  width: 100vw;
+  height: 30vh;
+  background: linear-gradient(to bottom, #e56b92, #70d6ff);
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(50% 99%, 0 0, 100% 0);
+  margin-top: 17%;
+}
+
+.inserto2 {
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  color: #fff; /* Colore del testo */
+  font-family: 'Arial', sans-serif; /* Font del testo */
+  position: absolute;
+  top: 50%; /* Posiziona il testo al centro verticalmente */
+  left: 50%; /* Posiziona il testo al centro orizzontalmente */
+  transform: translate(-50%, -150%); /* Centra il testo rispetto al centro del contenitore */
+  white-space: nowrap; /* Impedisce l'interruzione del testo a capo */
+  text-align: center; /* Allinea il testo al centro */
+  width: 90%;
+}
+  #percorsi {
+    max-width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 90%, 79% 100%, 79% 75%, 0% 75%);
+  }
+  
+#loghino{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+  
+  
+  .inserto3 {
+    height: 430px;
+    background: radial-gradient( circle at center, #10dd1d, #a9a8b9d4);
+    position: relative;
+  
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  .inserto4{
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    top: 50%; 
+    left: 22%; 
+   
+  }
+  
+  #log {
+    width: 100%; /* Fai sì che l'immagine si adatti completamente al div */
+    height: 100%; /* Fai sì che l'immagine si adatti completamente al div */
+    object-fit: cover; /* Mantieni le proporzioni originali e riempi completamente il div */
+    filter: blur(14px); /* Applica lo sfocato all'immagine */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Posiziona l'immagine di sfondo dietro il testo */
+    clip-path: circle(50% at 50% 50%); /* Mantieni la forma circolare specificata */
+  }
+  .h2 {
+    position: absolute;
+    transform: translateY(-60%);
+    /* Sposta l'elemento verso l'alto di 70px */
+    left: 0;
+    /* Assicura che l'elemento sia allineato correttamente */
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+    padding-right: 90px;
+    padding-left: 20px;
+    color: orangered;
+  
+  }
+  
+  h3 {
+    font-family: 'Libre Baskerville', serif;
+  
+  }
+  
+  .padding {
+    text-indent: 20px;
+    padding: 12%;
+    font-family: "Libre Baskerville", serif;
+    margin: 5%;
+  }
+  

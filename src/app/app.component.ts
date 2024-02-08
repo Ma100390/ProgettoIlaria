@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+
 import { MenuComponent } from "./menu/menu.component";
 
 @Component({
@@ -8,7 +8,7 @@ import { MenuComponent } from "./menu/menu.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, MenuComponent]
+    imports: [CommonModule, MenuComponent]
 })
 export class AppComponent {
 
