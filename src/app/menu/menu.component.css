@@ -64,7 +64,7 @@
 
 /* Aggiunge la classe show-menu per visualizzare il menu quando è aperto */
 .show-menu {
-  transform: translateY(0);
+  transform: translateY(22%);
   z-index: 100;
 }
 

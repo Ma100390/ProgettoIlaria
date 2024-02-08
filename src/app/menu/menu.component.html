@@ -6,10 +6,9 @@
     <h1 class="titolo">Psicologa e Psicoterapeuta</h1>
     <img src="assets/logo.webp" alt="Menu Icona" id="logo">
     <ul class="menu-ul" *ngIf="isMenuOpen" [class.show-menu]="isMenuOpen">
-        <li class="menu-li"><a routerLink="/">Psicologa</a></li>
-        <li class="menu-li"><a routerLink="/Servizi-individuali">Servizi</a></li>
-        <li class="menu-li"><a routerLink="/contatti">Contatti</a></li>
-        <li class="menu-li"><a routerLink="/Dove-Siamo">Dove Siamo</a></li>
+        <li class="menu-li"><a routerLink="/" (click)="closeMenu()">Informazioni Professionali</a></li>
+        <li class="menu-li"><a routerLink="/Servizi-individuali" (click)="closeMenu()">Attività & Servizi</a></li>
+        <li class="menu-li"><a routerLink="/Contatti" (click)="closeMenu()">Contatti</a></li>
     </ul>
 </nav>
 

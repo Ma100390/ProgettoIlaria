@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-menu',
@@ -11,17 +11,15 @@ import { RouterOutlet } from '@angular/router';
 })
 export class MenuComponent {
   menuIconSrc: string = 'assets/menu.webp';
-  isMenuOpen = false;
-
-
-
-
-
  
+  isMenuOpen: boolean = false;
 
 
-  
-  
+
+  closeMenu() {
+      this.isMenuOpen = false;
+  }
+
   menuclick(): void {
     this.isMenuOpen = !this.isMenuOpen;
     this.menuIconSrc = this.isMenuOpen ? 'assets/arrow.webp' : 'assets/menu.webp';

@@ -1,0 +1,40 @@
+.contatti-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+}
+
+.contatti-container h2 {
+    color: #333;
+    text-align: center;
+}
+p{
+    margin: 5%;
+    text-align: center;
+}
+.google-map {
+    margin-top: 50px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info strong {
+    font-weight: bold;
+}
