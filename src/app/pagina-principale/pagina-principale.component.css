@@ -22,10 +22,10 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase;
+   
     color: #fff;
     text-shadow: 0 0 30px rgb(255, 255, 255);
-    background-color: #9386ea;
+    background-color: #9386ea85;
     border: 1px solid #ffffff;
     box-shadow: 0 0 1px #fff;
     border-radius: 35px;
@@ -99,7 +99,7 @@
   .professional-profile-img {
       width: 150px; /* Imposta la larghezza dell'immagine del profilo */
       height: auto; /* Imposta l'altezza dell'immagine in modo proporzionale */
-      margin-right: 20px;
+
       filter: grayscale(80%);
   }
   

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background: linear-gradient( to bottom, rgb(51, 51, 51) 0%, rgba(0, 0, 0, 0) 50%, rgba(250, 251, 255, 0) 100%);
 
   position: fixed;
   /* Cambia da 'absolute' a 'fixed' */
@@ -36,7 +36,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #333;
+  background: linear-gradient( to right, rgba(51, 51, 51, 0) 0%,rgb(23, 103, 189) 50%, rgba(51, 51, 51, 0.05) 100%);
   position: absolute;
   top: 60px;
   left: 0;
@@ -60,7 +60,7 @@
 }
 
 .menu-li a {
-  color:#898ad2;
+  color:#ffffff;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -99,12 +99,12 @@
   }
 
   #logo {
-    width: 20%;
-    height: 90%;
+    height: 63%;
     object-fit: cover;
-    filter: drop-shadow(1px 2px 1px #000000);
-    margin-right: 2%;
+    filter: drop-shadow(1px 2px 1px #0000009e);
+    margin-right: 1%;
     transform: scaleX(-1);
+    margin-top: -5%;
   }
 
   #percorsi {
@@ -131,7 +131,13 @@ footer {
   white-space: nowrap;
   margin: 2%;
 }
-
+p{
+  color: #fff;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
 .scrolling-text {
   display: inline-block;
   animation: scroll 10s linear infinite;

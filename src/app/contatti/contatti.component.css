@@ -31,6 +31,15 @@ p{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.info2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
 .info p {
     margin: 10px 0;
 }
