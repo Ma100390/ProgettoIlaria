@@ -95,3 +95,60 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+
+
+
+#presentazione {
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+
+.button:hover {
+  background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Posizionamento del primo button in alto a sinistra */
+.button-top-left {
+  display: inline-block;
+  background-color: #007bff; /* Colore di sfondo */
+  color: #fff; /* Colore del testo */
+  padding: 21px 61px;
+  border: none; /* Rimuove il bordo */
+  border-radius: 5px; /* Bordi arrotondati */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 35%;
+  right: 23%;
+}
+
+/* Posizionamento del secondo button in basso a destra */
+.button-bottom-right {
+  display: inline-block;
+  background-color: #007bff; /* Colore di sfondo */
+  color: #fff; /* Colore del testo */
+  padding: 21px 61px;
+  border: none; /* Rimuove il bordo */
+  border-radius: 5px; /* Bordi arrotondati */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 45%;
+  right: 23%;
+}
+.button-bottom{
+  display: inline-block;
+  background-color: #007bff; /* Colore di sfondo */
+  color: #fff; /* Colore del testo */
+  padding: 21px 61px;
+  border: none; /* Rimuove il bordo */
+  border-radius: 5px; /* Bordi arrotondati */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 55%;
+  right: 23%;
+}

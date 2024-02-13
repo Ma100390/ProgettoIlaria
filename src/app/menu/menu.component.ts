@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
@@ -9,13 +9,20 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit{
   menuIconSrc: string = 'assets/menu.webp';
  
   isMenuOpen: boolean = false;
-
-
-
+  cities: string[] = ['Firenze', 'Siena', 'Lucca'];
+  currentCity: string = this.cities[0];
+  cityIndex: number = 0;
+  ngOnInit(): void {
+    setInterval(() => this.changeCity(), 5000);
+  }
+  changeCity(): void {
+    this.cityIndex = (this.cityIndex + 1) % this.cities.length;
+    this.currentCity = this.cities[this.cityIndex];
+  }
   closeMenu() {
       this.isMenuOpen = false;
   }

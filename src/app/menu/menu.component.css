@@ -140,15 +140,33 @@ a{
 }
 .scrolling-text {
   display: inline-block;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(290%);
+    transform: translateX(90%);
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-70%);
   }
+}
+
+.titolo-container {
+  display: flex;
+  align-items: center; /* Allinea verticalmente */
+}
+#cityAnimation {
+  margin-left: 10px; /* Aggiunge un margine a sinistra per separare il titolo dalla città */
+}
+.titolo1{
+  z-index: 1;
+    color: #eb2c2c;
+    text-shadow: 0 0 4px rgba(250, 247, 247, 0.767);
+    font-family: "Montserrat", sans-serif;
+    font-size: smaller;
+    position: absolute;
+   
+    left: 60%;
 }

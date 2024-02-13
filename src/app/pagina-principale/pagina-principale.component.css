@@ -100,7 +100,7 @@
       width: 150px; /* Imposta la larghezza dell'immagine del profilo */
       height: auto; /* Imposta l'altezza dell'immagine in modo proporzionale */
 
-      filter: grayscale(80%);
+      filter: grayscale(20%);
   }
   
   .profile-description {
