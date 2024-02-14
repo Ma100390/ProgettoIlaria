@@ -51,7 +51,7 @@
     font-family: 'Libre Baskerville', serif;
     position: absolute;
     top: 50%; 
-    left: 22%; 
+    left: 5%; 
    
   }
   
@@ -115,14 +115,14 @@
   display: inline-block;
   background-color: #007bff; /* Colore di sfondo */
   color: #fff; /* Colore del testo */
-  padding: 21px 61px;
+  padding: 5% 10%;
   border: none; /* Rimuove il bordo */
   border-radius: 5px; /* Bordi arrotondati */
   cursor: pointer; /* Cambia il cursore al passaggio del mouse */
   position: absolute;
   font-family: "Montserrat", sans-serif;
   top: 35%;
-  right: 23%;
+  right: 25%;
 }
 
 /* Posizionamento del secondo button in basso a destra */
@@ -130,25 +130,25 @@
   display: inline-block;
   background-color: #007bff; /* Colore di sfondo */
   color: #fff; /* Colore del testo */
-  padding: 21px 61px;
+  padding: 5% 10%;
   border: none; /* Rimuove il bordo */
   border-radius: 5px; /* Bordi arrotondati */
   cursor: pointer; /* Cambia il cursore al passaggio del mouse */
   position: absolute;
   font-family: "Montserrat", sans-serif;
-  top: 45%;
-  right: 23%;
+  top: 47%;
+  right: 25%;
 }
 .button-bottom{
   display: inline-block;
   background-color: #007bff; /* Colore di sfondo */
   color: #fff; /* Colore del testo */
-  padding: 21px 61px;
+  padding: 5% 10%;
   border: none; /* Rimuove il bordo */
   border-radius: 5px; /* Bordi arrotondati */
   cursor: pointer; /* Cambia il cursore al passaggio del mouse */
   position: absolute;
   font-family: "Montserrat", sans-serif;
-  top: 55%;
-  right: 23%;
+  top: 59%;
+  right: 25%;
 }
