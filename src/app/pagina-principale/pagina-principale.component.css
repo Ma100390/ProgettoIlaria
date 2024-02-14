@@ -4,9 +4,8 @@
   }
   #elementId {
     position: absolute;
-  
-    color: #f2f2f2;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
     font-size: 38px;
     font-family: "Kalnia", serif;
   }

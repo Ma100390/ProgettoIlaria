@@ -32,18 +32,18 @@
 /* Stile della lista del menu */
 .menu-ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( to right, rgba(51, 51, 51, 0) 0%,rgb(23, 103, 189) 50%, rgba(51, 51, 51, 0.05) 100%);
+  background: linear-gradient( to right, rgba(51, 51, 51, 0.63) 0%, rgb(89, 198, 96) 50%, rgba(51, 51, 51, 0.63) 100%);
   position: absolute;
   top: 60px;
   left: 0;
-  width: 100%;
-
+  width: 96%;
   transition: transform 0.3s ease-in-out;
   transform: translateY(-100%);
+  border-radius: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .menu-li {
@@ -57,11 +57,13 @@
   color: #fff;
   font-size: 16px;
   transition: color 0.3s ease-in-out;
+  
 }
 
 .menu-li a {
   color:#ffffff;
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 
 /* Aggiunge la classe show-menu per visualizzare il menu quando è aperto */
@@ -96,6 +98,7 @@
     font-family: "Montserrat", sans-serif;
     top: 50%;
     font-size: smaller;
+    font-weight: 900;
   }
 
   #logo {

@@ -1,24 +1,28 @@
 .professional-services-container {
-    background-color: #acff95;
+    background-color: #96c888;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     text-align: center;
     margin-top: 100px;
+    margin-left: 2%;
+  margin-right: 2%;
 }
 
 .professional-services-header h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333333;
+    color: #f0ee66;
+    font-family: 'Kalnia', serif;
 }
 
 .professional-services-header p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #666666;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .professional-services-list {
@@ -29,7 +33,7 @@
 }
 
 .service-item {
-    background-color: #8ad78f;
+    background-color: #fff;
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.58);
@@ -39,11 +43,26 @@
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333333;
+    color: #f0ee66;
+    font-family: 'Sacramento';
+    text-align: center;
 }
 
 .service-item p {
     font-size: 16px;
     line-height: 1.6;
-    color: #666666;
+    color: #d96767;
+}
+a[href^="tel:"] {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px; /* Aggiungi spazio sopra il link */
+}
+
+a[href^="tel:"]:hover {
+    background-color: #0056b3;
 }
