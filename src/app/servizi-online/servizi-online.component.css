@@ -1,6 +1,6 @@
 .professional-services-container {
     background-color: #96c888;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -41,11 +41,10 @@
 }
 
 .service-item h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 15px;
-    color: #f0ee66;
-    font-family: 'Sacramento';
-    text-align: center;
+    color: #c8c656;
+    font-family: "Sacramento";
 }
 
 .service-item p {
