@@ -95,8 +95,26 @@
 .padding {
   margin-top: 0; /* Rimuove il margine superiore predefinito */
 }
-@media screen and (max-width: 480px) {
-  
+@media screen and (max-width: 700px) {
+  #servizi-individuali,
+#servizi-gruppo {
+  padding: 0;
+}
+.card-content {
+  flex: 1; /* Per far espandere il contenuto rimanente */
+  padding:8%
+}
+.percorsi img {
+
+  border-radius: 8px;
+
+ 
+  width:100%;
+}
+.percorsi{
+  padding: 0;
+  flex-direction: column-reverse;
+}
 #presentazione {
   max-width: 100%;
   height: 100vh;
@@ -110,28 +128,8 @@
   right: auto; /* Resetta la posizione a destra */
 
 }
-.inserto2 {
-  color: #fff;
-  font-family: 'Libre Baskerville', serif;
-  color: #fff; /* Colore del testo */
-  font-family: 'Arial', sans-serif; /* Font del testo */
-  position: absolute;
-  top: 50%; /* Posiziona il testo al centro verticalmente */
-  left: 50%; /* Posiziona il testo al centro orizzontalmente */
-  transform: translate(-50%, -150%); /* Centra il testo rispetto al centro del contenitore */
-  white-space: nowrap; /* Impedisce l'interruzione del testo a capo */
-  text-align: center; /* Allinea il testo al centro */
-  width: 90%;
-}
-.inserto {
-  width: 100vw;
-  height: 30vh;
-  background: linear-gradient(to bottom, #e56b92, #70d6ff);
-  position: relative;
-  overflow: hidden;
-  clip-path: polygon(50% 99%, 0 0, 100% 0);
-  
-}
+
+
 #percorsi {
   max-width: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 90%, 79% 100%, 79% 75%, 0% 75%);
@@ -140,10 +138,8 @@
   display: block;
 }
 #loghino{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+display: block;
+margin: 0 auto;
 }
 #servizi-individuali{
   background-color: #d7eeee;
@@ -180,18 +176,10 @@
   z-index: -1;
 }
 .h2 {
-  position: absolute;
-  transform: translateY(-60%);
-  /* Sposta l'elemento verso l'alto di 70px */
-  left: 0;
-  /* Assicura che l'elemento sia allineato correttamente */
   font-family: "Montserrat", sans-serif;
   text-shadow: 0 0 30px rgb(255, 255, 255);
-  padding-right: 90px;
-  padding-left: 20px;
   color: orangered;
-  padding-bottom: 2%;
-
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -203,17 +191,17 @@ h3 {
   text-indent: 20px;
   padding: 5%;
   font-family: "Libre Baskerville", serif;
-  margin: 12%;
-  background-color: #ffffff;
+  background-color: #ffd556;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
+  color: #312e2e;
+}
 }
 .testoTitolo {
   font-family: "Libre Baskerville", serif;
   position: absolute;
-  top: 15%;
-  right: 30%;
-  right: 38%;
+  top: 50%;
+  left: 50%;
   padding: 20px;
   
   background-color: #2d466291;
@@ -267,12 +255,5 @@ width:100%;
 object-fit: cover;
 height: 100vh
 }
-}
-@media screen and (max-width: 880px) {
-  .testoTitolo {
-    right: 14%;
-}
 
-
-}
 
