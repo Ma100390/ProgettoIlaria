@@ -8,14 +8,13 @@
     text-shadow: 0 0 1px rgb(0, 0, 0);
     font-size: 38px;
     font-family: "Kalnia", serif;
+    left: 12%;
+    top: 20%;
+    right: 11%;
+    width:fit-content;
+    background-color: #2a19973a;;
   }
-  
-#presentazione {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* per mantenere l'aspetto dell'immagine */
-  }
+
   .button {
     display: inline-block;
     padding: 10px 20px;
@@ -24,15 +23,15 @@
    
     color: #fff;
     text-shadow: 0 0 30px rgb(255, 255, 255);
-    background-color: #9386ea85;
+    background-color: #2a199785;
     border: 1px solid #ffffff;
     box-shadow: 0 0 1px #fff;
     border-radius: 35px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     position: absolute;
-    top: 90%;
-    left: 5%;
+    top: 60%;
+    left: 40%;
     font-family: "Montserrat", sans-serif;
   }
   #freccia2 {
@@ -58,11 +57,40 @@
     transition: transform 1s ease;
     /* Aggiungi una transizione per un'animazione fluida */
   }
-  #presentazione {
-    max-width: 100%;
-    height: 100vh;
-    object-fit: cover;
+   #presentazione {
+    width: 100%;
+    height: auto;
+
+   }
+  @media screen and (max-width: 480px) {
+    #presentazione {
+
+      height: 100vh;
+      object-fit: cover;
+    }
+    #elementId {
+
+      left: 10%;
+      right: 6%;
+
+    }
+    .button{
+      top: 90%;
+      left:5%;
+      background-color: #9386ea85;
+    }
   }
+  @media screen and (max-width: 880px) {
+    #presentazione {
+      height: 100vh;
+      object-fit: cover;
+      
+    }
+    p{
+      margin-top: 5%;
+    }
+  }
+
 
   .professional-profile-img {
     width: 150px; /* Imposta la larghezza desiderata */
@@ -118,6 +146,7 @@
     align-items: center; /* Centra orizzontalmente */
     text-align: center; /* Centra il testo */
     padding: 5%;
+    margin: 0 auto;
 }
 
 .profile-description {
@@ -128,7 +157,9 @@
     margin-top: 20px; /* Aggiunge spazio sopra il secondo paragrafo */
 }
 p{
-  margin-top: 5%;
+  margin-top: 7%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .profile-container {

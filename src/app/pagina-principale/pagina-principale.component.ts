@@ -28,11 +28,11 @@ export class PaginaPrincipaleComponent {
 
   getAnimationStyle() {
     const scrollPosition = (window && window.scrollY) || (document && document.documentElement && document.documentElement.scrollTop) || 0;
-    const animationProgress = this.mostraH2 ? Math.min(scrollPosition / 80, 1) : 0;
+    const animationProgress = this.mostraH2 ? Math.min(scrollPosition / 160, 1) : 0;
 
     const animationDuration = animationProgress > 0 ? `${Math.abs(animationProgress) * 600}s` : '0s';
 
-    const transformValue = `translate(5%, 60%) scale(${1 + animationProgress * 3})`;
+    const transformValue = `scale(${1 + animationProgress * 3})`;
     const opacityValue = 1 - animationProgress;
 
     const finalOpacity = this.mostraH2 ? opacityValue : 0;

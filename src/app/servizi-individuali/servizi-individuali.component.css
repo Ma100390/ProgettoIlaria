@@ -1,13 +1,115 @@
-.inserto {
-  width: 100vw;
-  height: 30vh;
-  background: linear-gradient(to bottom, #e56b92, #70d6ff);
+.copertina {
   position: relative;
-  overflow: hidden;
-  clip-path: polygon(50% 99%, 0 0, 100% 0);
-  margin-top: 17%;
 }
 
+#presentazione {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.testoTitolo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button-top-left,
+.button-bottom-right,
+.button-bottom {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  
+}
+
+/* Servizi */
+#servizi-individuali,
+#servizi-gruppo {
+  padding: 60px;
+}
+
+.inserto {
+  margin-bottom: 20px;
+}
+
+.inserto2,
+.inserto4 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Arial",sans-serif;
+  color: #3A3A3A;
+}
+
+/* Percorsi */
+/* Percorsi */
+.percorsi {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.percorsi:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.percorsi img {
+  width: 50%;
+  border-radius: 8px;
+  margin-right: 20px; /* Spazio tra l'immagine e il testo */
+  clip-path: polygon(0 0, 85% 0, 100% 14%, 100% 100%, 16% 100%, 0% 84%, 0 84%);
+  
+}
+
+.card-content {
+  flex: 1; /* Per far espandere il contenuto rimanente */
+  padding:3%
+}
+
+.h2 {
+  color: #ff9007;
+  margin-top: 0; /* Rimuove il margine superiore predefinito */
+  margin-bottom: 50px; /* Aggiunge uno spazio tra il titolo e il testo */
+}
+
+.padding {
+  margin-top: 0; /* Rimuove il margine superiore predefinito */
+}
+@media screen and (max-width: 480px) {
+  
+#presentazione {
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.testoTitolo {
+  
+  top: 28%;
+  left: 17%;
+
+  right: auto; /* Resetta la posizione a destra */
+
+}
 .inserto2 {
   color: #fff;
   font-family: 'Libre Baskerville', serif;
@@ -21,134 +123,156 @@
   text-align: center; /* Allinea il testo al centro */
   width: 90%;
 }
-  #percorsi {
-    max-width: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 90%, 79% 100%, 79% 75%, 0% 75%);
-  }
+.inserto {
+  width: 100vw;
+  height: 30vh;
+  background: linear-gradient(to bottom, #e56b92, #70d6ff);
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(50% 99%, 0 0, 100% 0);
   
+}
+#percorsi {
+  max-width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 90%, 79% 100%, 79% 75%, 0% 75%);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 #loghino{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
+#servizi-individuali{
+  background-color: #d7eeee;
+}
+.inserto3 {
+  background: radial-gradient( circle at center, #23d92ef7, #fffbfb00);
+  position: relative;
+  clip-path: circle(50% at 50% 50%);
+  margin-bottom: 20%;
+  width: 66%;
+  height: 246px;
+  margin: 0 auto;
+    margin-bottom: 0px;
+  margin-bottom: 20%;
+}
+
+.inserto4{
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  position: absolute;
+  top: 50%; 
+  left: 5%; 
+ 
+}
+
+#log {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  filter: blur(20px);
+  position: absolute;
+  top: 49px;
+  left: 0;
+  z-index: -1;
+}
+.h2 {
+  position: absolute;
+  transform: translateY(-60%);
+  /* Sposta l'elemento verso l'alto di 70px */
+  left: 0;
+  /* Assicura che l'elemento sia allineato correttamente */
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 30px rgb(255, 255, 255);
+  padding-right: 90px;
+  padding-left: 20px;
+  color: orangered;
+  padding-bottom: 2%;
+
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+.padding {
+  text-indent: 20px;
+  padding: 5%;
+  font-family: "Libre Baskerville", serif;
+  margin: 12%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.testoTitolo {
+  font-family: "Libre Baskerville", serif;
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  right: 38%;
+  padding: 20px;
   
-  
-  .inserto3 {
-    background: radial-gradient( circle at center, #23d92ef7, #fffbfb00);
-    position: relative;
-    clip-path: circle(50% at 50% 50%);
-    margin-bottom: 20%;
-    width: 66%;
-    height: 246px;
-    margin: 0 auto;
-      margin-bottom: 0px;
-    margin-bottom: 20%;
-  }
-  
-  .inserto4{
-    color: #fff;
-    font-family: 'Libre Baskerville', serif;
-    position: absolute;
-    top: 50%; 
-    left: 5%; 
-   
-  }
-  
-  #log {
-    width: 85%;
-    height: 85%;
-    object-fit: cover;
-    filter: blur(20px);
-    position: absolute;
-    top: 49px;
-    left: 0;
-    z-index: -1;
-  }
-  .h2 {
-    position: absolute;
-    transform: translateY(-60%);
-    /* Sposta l'elemento verso l'alto di 70px */
-    left: 0;
-    /* Assicura che l'elemento sia allineato correttamente */
-    font-family: "Montserrat", sans-serif;
-    text-shadow: 0 0 30px rgb(255, 255, 255);
-    padding-right: 90px;
-    padding-left: 20px;
-    color: orangered;
-    padding-bottom: 2%;
-  
-  }
-  
-  h3 {
-    font-family: 'Libre Baskerville', serif;
-  
-  }
-  
-  .padding {
-    text-indent: 20px;
-    padding: 5%;
-    font-family: "Libre Baskerville", serif;
-    margin: 12%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+  background-color: #2d466291;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.button-top-left,
+.button-bottom-right,
+.button-bottom {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  width: 240px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button-top-left {
+  top: 30%;
+  right: 40%;
+}
+
+.button-bottom-right {
+  top: 45%;
+  right: 40%;
+}
+
+.button-bottom {
+  top: 60%;
+  right: 40%;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
 
 
 
 #presentazione {
-  max-width: 100%;
-  height: 100vh;
-  object-fit: cover;
+width:100%;
+object-fit: cover;
+height: 100vh
+}
+}
+@media screen and (max-width: 880px) {
+  .testoTitolo {
+    right: 14%;
 }
 
 
-
-.button:hover {
-  background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
 }
 
-/* Posizionamento del primo button in alto a sinistra */
-.button-top-left {
-  display: inline-block;
-  background-color: #007bff; /* Colore di sfondo */
-  color: #fff; /* Colore del testo */
-  padding: 5% 10%;
-  border: none; /* Rimuove il bordo */
-  border-radius: 5px; /* Bordi arrotondati */
-  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-  position: absolute;
-  font-family: "Montserrat", sans-serif;
-  top: 35%;
-  right: 25%;
-}
-
-/* Posizionamento del secondo button in basso a destra */
-.button-bottom-right {
-  display: inline-block;
-  background-color: #007bff; /* Colore di sfondo */
-  color: #fff; /* Colore del testo */
-  padding: 5% 10%;
-  border: none; /* Rimuove il bordo */
-  border-radius: 5px; /* Bordi arrotondati */
-  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-  position: absolute;
-  font-family: "Montserrat", sans-serif;
-  top: 47%;
-  right: 25%;
-}
-.button-bottom{
-  display: inline-block;
-  background-color: #007bff; /* Colore di sfondo */
-  color: #fff; /* Colore del testo */
-  padding: 5% 10%;
-  border: none; /* Rimuove il bordo */
-  border-radius: 5px; /* Bordi arrotondati */
-  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-  position: absolute;
-  font-family: "Montserrat", sans-serif;
-  top: 59%;
-  right: 25%;
-}
