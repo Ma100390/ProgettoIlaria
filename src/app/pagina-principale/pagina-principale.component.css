@@ -72,13 +72,14 @@
 
       left: 10%;
       right: 6%;
-
+      background-color: #2a199700;
     }
     .button{
       top: 90%;
       left:5%;
       background-color: #9386ea85;
     }
+
   }
   @media screen and (max-width: 880px) {
     #presentazione {

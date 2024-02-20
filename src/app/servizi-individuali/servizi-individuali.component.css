@@ -1,19 +1,35 @@
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
 .copertina {
   position: relative;
 }
 
 #presentazione {
-  width:100%;
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
-  height: 100vh
-  }
-  
+}
 
 .testoTitolo {
+  font-family: "Libre Baskerville", serif;
   position: absolute;
   top: 50%;
+
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(45, 70, 102, 0.57); /* Trasparenza per migliorare la leggibilità del testo */
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -31,22 +47,24 @@
   cursor: pointer;
   margin: 10px;
   font-size: 16px;
-  
+  font-family: 'Montserrat', sans-serif;
+}
+.button:hover {
+  background-color: #0056b3;
 }
 
-/* Servizi */
-#servizi-individuali,
-#servizi-gruppo {
-  padding: 60px;
+.inserto,
+.inserto2,
+.inserto3,
+.inserto4 {
+  text-align: center;
 }
-
 .inserto {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 40px;
 }
-
 .inserto2{
   text-align: center;
   font-size: 25px;
@@ -56,11 +74,8 @@
   font-weight: 400; 
   font-family: "Arial", sans-serif;
   color: #3A3A3A;
-  margin-top: 40px;
+  margin-top: 30%;
 }
-
-/* Percorsi */
-/* Percorsi */
 .percorsi {
   display: flex;
   align-items: center;
@@ -81,23 +96,23 @@
 .percorsi img {
   width: 50%;
   border-radius: 8px;
-  margin-right: 20px; /* Spazio tra l'immagine e il testo */
+  margin-right: 20px;
   clip-path: polygon(0 0, 85% 0, 100% 14%, 100% 100%, 16% 100%, 0% 84%, 0 84%);
-  
 }
-
 .card-content {
-  flex: 1; /* Per far espandere il contenuto rimanente */
+  flex: 1;
   padding:3%
 }
-
 .h2 {
   color: #ff9007;
   margin-top: 0; /* Rimuove il margine superiore predefinito */
   margin-bottom: 50px; /* Aggiunge uno spazio tra il titolo e il testo */
   font-family: 'Nanum Myeongjo', serif;
 }
+h3 {
+  font-family: 'Libre Baskerville', serif;
 
+}
 .padding {
   margin-top: 0; /* Rimuove il margine superiore predefinito */
   font-family: 'Montserrat', sans-serif;
@@ -106,156 +121,81 @@
 }
 @media screen and (max-width: 700px) {
   #servizi-individuali,
-#servizi-gruppo {
-  padding: 0;
-}
-.card-content {
-  flex: 1; /* Per far espandere il contenuto rimanente */
-  padding:8%
-}
-.percorsi img {
-
-  border-radius: 8px;
-
- 
-  width:100%;
-}
-.percorsi{
-  padding: 0;
-  flex-direction: column-reverse;
-}
-#presentazione {
-  max-width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-.testoTitolo {
-  top: 28%;
-  left: 17%;
-  right: auto;
-}
-
-
-#percorsi {
-  max-width: 100%;
- 
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-#loghino{
-display: block;
-margin: 0 auto;
-}
-#servizi-individuali{
-  background-color: #d7eeee;
-}
-.inserto3 {
-  background: radial-gradient( circle at center, #23d92ef7, #fffbfb00);
-  position: relative;
-  clip-path: circle(50% at 50% 50%);
-  margin-bottom: 20%;
-  width: 66%;
-  height: 246px;
-  margin: 0 auto;
-    margin-bottom: 0px;
-  margin-bottom: 20%;
-}
-
-.inserto4{
-  color: #fff;
-  font-family: 'Libre Baskerville', serif;
-  position: absolute;
-  top: 50%; 
-  left: 5%; 
- 
-}
-
-#log {
-  width: 85%;
-  height: 85%;
-  object-fit: cover;
-  filter: blur(20px);
-  position: absolute;
-  top: 49px;
-  left: 0;
-  z-index: -1;
-}
-.h2 {
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 0 0 30px rgb(36 255 246);
-  color: orangered;
-  margin-bottom: 30px;
-}
-
-h3 {
-  font-family: 'Libre Baskerville', serif;
-
-}
-
-.padding {
-  text-indent: 20px;
-  padding: 5%;
-  background-color: #ffd556;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
-  color: #312e2e;
-  margin-right: 0%;
-  margin-left: 0%;
-}
-}
-.testoTitolo {
-  font-family: "Libre Baskerville", serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
+  #servizi-gruppo {
+    padding: 0;
+  }
   
-  background-color: #2d466291;
-  color: #fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  .card-content {
+    padding: 8%;
+  }
+  
+  .percorsi img {
+    width: 100%;
+  }
+  
+  .percorsi {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  
+  #presentazione {
+    max-height: 100vh;
+    height: auto;
+  }
+  
+
+  #percorsi {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  #loghino {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #servizi-individuali {
+    background-color: #d7eeee;
+  }
+  
+  .inserto3 {
+    margin-bottom: 20%;
+  }
+  
+  .inserto4 {
+    color: #fff;
+  }
+  
+  #log {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    filter: blur(20px);
+    position: absolute;
+    top: 49px;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .h2 {
+    text-shadow: 0 0 30px rgb(36 255 246);
+    color: orangered;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .padding {
+    text-indent: 20px;
+    padding: 5%;
+    background-color: #ffd556;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
+    color: #312e2e;
+    margin: 0;
+  }
 }
-
-.button-top-left,
-.button-bottom-right,
-.button-bottom {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-
-
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.button-top-left {
-  top: 30%;
-  right: 40%;
-}
-
-.button-bottom-right {
-  top: 45%;
-  right: 40%;
-}
-
-.button-bottom {
-  top: 60%;
-  right: 40%;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
-
-
 
 
