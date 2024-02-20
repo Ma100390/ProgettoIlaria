@@ -3,10 +3,11 @@
 }
 
 #presentazione {
-  width: 100%;
-  height: auto;
+  width:100%;
   object-fit: cover;
-}
+  height: 100vh
+  }
+  
 
 .testoTitolo {
   position: absolute;
@@ -22,8 +23,9 @@
   display: inline-block;
   background-color: #007bff;
   color: #fff;
-  width: 200px;
-  height: 40px;
+  width: 300px;
+  height: 70px;
+  padding: 5%;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -42,19 +44,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.inserto2,
-.inserto4 {
+.inserto2{
   text-align: center;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-weight: 400; 
   font-family: "Arial", sans-serif;
   color: #3A3A3A;
+  margin-top: 40px;
 }
 
 /* Percorsi */
@@ -68,7 +70,7 @@
   padding: 20px;
   margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  background: linear-gradient( 27deg, #cac4e100, #5a00d0);
 }
 
 .percorsi:hover {
@@ -93,10 +95,14 @@
   color: #ff9007;
   margin-top: 0; /* Rimuove il margine superiore predefinito */
   margin-bottom: 50px; /* Aggiunge uno spazio tra il titolo e il testo */
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 .padding {
   margin-top: 0; /* Rimuove il margine superiore predefinito */
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 25%;
+  margin-left: 10%;
 }
 @media screen and (max-width: 700px) {
   #servizi-individuali,
@@ -124,18 +130,15 @@
   object-fit: cover;
 }
 .testoTitolo {
-  
   top: 28%;
   left: 17%;
-
-  right: auto; /* Resetta la posizione a destra */
-
+  right: auto;
 }
 
 
 #percorsi {
   max-width: 100%;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 90%, 79% 100%, 79% 75%, 0% 75%);
+ 
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -180,7 +183,7 @@ margin: 0 auto;
 }
 .h2 {
   font-family: "Montserrat", sans-serif;
-  text-shadow: 0 0 30px rgb(255, 255, 255);
+  text-shadow: 0 0 30px rgb(36 255 246);
   color: orangered;
   margin-bottom: 30px;
 }
@@ -193,11 +196,12 @@ h3 {
 .padding {
   text-indent: 20px;
   padding: 5%;
-  font-family: "Libre Baskerville", serif;
   background-color: #ffd556;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
   color: #312e2e;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 }
 .testoTitolo {
@@ -223,8 +227,8 @@ h3 {
   display: inline-block;
   background-color: #007bff;
   color: #fff;
-  width: 240px;
-  height: 60px;
+
+
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -253,10 +257,5 @@ h3 {
 
 
 
-#presentazione {
-width:100%;
-object-fit: cover;
-height: 100vh
-}
 
 
